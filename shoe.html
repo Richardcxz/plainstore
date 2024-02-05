@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="1x1.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../1x1.png">
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>STR</title>
@@ -19,7 +19,7 @@
             <p class="btnnav" id="cart" onclick="checkout()">CART</p>
             <p class="btnnav" id="about" onclick="about()">ABOUT</p>
         </div>
-        <p id="currentPrice" class="btnnav" id="cart""></p>
+        <p id="currentPrice" class="btnnav" id="cart"">$</p>
       </div>
     </nav>
 </header>
@@ -28,19 +28,18 @@
 
     <div class="list">
         <div>
-            <img class="product" src="images/shirt.gif" onclick="prodDetail(1)">
-            <p class="prName"><i>basic shirt</i></p>
-            <p class="prName"><i>$30</i></p>
-        </div>
-        <div>
-            <img class="product" src="images/shorts.gif" onclick="prodDetail(2)">
-            <p class="prName"><i>white shorts</i></p>
-            <p class="prName"><i>$20</i></p>
-        </div>
-        <div>
-            <img class="product" src="images/shoe.gif" onclick="prodDetail(3)">
+            <img class="product" src="../images/shoe.gif">
             <p class="prName"><i>slip-on shoe</i></p>
-            <p class="prName"><i>$35</i></p>
+            <p class="prName"><i>$35</i><i>  size: 9</i></p>
+            <p class="addCart" onclick="cart('shoe')">ADD TO CART</p>
+            <br><br>
+            <p class="prName"><i>color: white</i></p>
+            <p class="prName"><i>material: fabric</i></p>
+            <p class="prName"><i>sole: rubber</i></p>
+            <p class="prName"><i>style: casual</i></p>
+            <p class="prName"><i>easy slip-on</i></p>
+            <p class="prName"><i>comfortable</i></p>
+            <p class="prName"><i>sleek design</i></p>
         </div>
     </div>
 

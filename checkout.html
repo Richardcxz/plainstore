@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="1x1.png">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <title>STR - Checkout</title>
+</head>
+
+<body>
+    <header>
+        <img class="logochk" src="logo.png" onclick="home()">
+    </header>
+
+    <section class="checkout-section">
+        <h2>Checkout</h2>
+        <div class="itemSum">
+        <p>shirts: <span id="shirtCount"></span><span>x   </span></p>
+        <p>shorts: <span id="shortsCount"></span><span>x   </span></p>
+        <p>shoes: <span id="shoeCount"></span><span>x</span></p>
+        </div>
+        <p>total: <span id="currentPrice"></span></p>
+
+        <form id="checkoutForm">
+            <h3>Personal Details</h3>
+            <div class="form-group">
+                <p for="name">Name:</p>
+                <input type="text" id="name" name="name" required>
+            </div>
+        
+            <div class="form-group">
+                <p for="address">Address:</p>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+        
+            <h3>Card Details</h3>
+            <div class="form-group">
+                <p for="cardNumber">Card Number:</p>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+        
+            <div class="form-group">
+                <p for="expiryDate">Expiry Date:</p>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+            </div>
+        
+            <div class="form-group">
+                <p for="cvv">CVV:</p>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
