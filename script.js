@@ -8,6 +8,20 @@ else{
     document.getElementById("currentPrice").innerHTML = "$" + localStorage.getItem('cartTotal');
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const products = document.querySelectorAll('.product');
+
+    products.forEach(product => {
+        product.addEventListener('mouseenter', function () {
+            product.style.filter = 'invert(1)';
+        });
+
+        product.addEventListener('mouseleave', function () {
+            product.style.filter = 'invert(0)';
+        });
+    });
+});
+
 function updTotal(){
     document.getElementById("currentPrice").innerHTML = "$" + localStorage.getItem('cartTotal');
 }
@@ -16,17 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("shirtCount").innerHTML = localStorage.getItem('shirt');
     document.getElementById("shortsCount").innerHTML = localStorage.getItem('shorts');
     document.getElementById("shoeCount").innerHTML = localStorage.getItem('shoe');
-    const products = document.querySelectorAll('.product');
-
-    products.forEach(product => {
-        product.addEventListener('mouseover', function () {
-            product.style.filter = 'invert(1)';
-        });
-
-        product.addEventListener('mouseout', function () {
-            product.style.filter = 'invert(0)';
-        });
-    });
 });
 
 function checkout() {
